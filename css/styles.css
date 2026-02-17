@@ -1,0 +1,241 @@
+
+body{
+    margin: 0 auto;
+}
+
+header.header{
+    display: flex;
+    align-items: center;
+    background-color:NONE ;
+
+
+}
+
+header.header img{
+    width: 150px;
+}
+
+section.top-page{
+    background: url(../image/bg.jpg);
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+    }
+
+.big-title {
+        color: white;
+        font-size: 80px;
+        padding: 20px 50px;
+    }
+
+    /* Menu de navigation */
+    nav.nav{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        color: white;
+        width: 400px;
+        margin-left: 200px;
+    }
+    nav.nav li{
+        display: flex;
+        color: white;
+    }
+    .paragraphe{
+        display: flex;
+        color: aliceblue;
+        padding: 20px 50px;
+        font-weight: bold;
+    }
+
+.services{
+display: flex;
+justify-content: space-evenly;
+margin: 100px;
+}
+
+.service-item{
+    display: flex;
+    align-items:center ;
+    flex-direction: column;
+}
+
+.delivery-icon{
+    font-size: 50px;
+    color: #ADD981;
+}
+
+.service-details{
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+
+.section-title{
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: 100;
+    position: relative;
+}
+.section-title::before{
+    content:"";
+    position: absolute;
+    background-color: #ADD981;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.bests-items{
+    margin: 40px;
+
+}
+
+.best-plants{
+    background-color: red;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plant-box{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.no-grid{
+     min-width: 350px;
+    height: 500px;
+    flex: 1;
+}
+
+.plant1{
+    background-image: url(../image/nos_meilleures_ventes/1.jpg); 
+}
+
+.plant2{
+    background-image: url(../image/nos_meilleures_ventes/2.jpg); 
+}
+
+.plant3{
+    background-image: url(../image/nos_meilleures_ventes/3.jpg); 
+}
+
+.plant4{
+    background-image: url(../image/nos_meilleures_ventes/4.jpg); 
+}
+
+.plant-details{
+    position: absolute;
+    width:  100%;
+    bottom: 0%;
+    background-color: #FFFFFFDF;
+    padding: 5px 20px;
+
+}
+
+.plant-name{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+}
+
+.plant-price{
+    color: #ADD981;
+    line-height: 3px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f9f4;
+}
+
+/* SECTION */
+.plants-section {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre horizontalement */
+}
+
+/* TITRE */
+.section-title {
+    color: #2e7d32;
+    margin-bottom: 30px;
+}
+
+/* TABLEAU */
+.plant-table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 900px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.plant-table th,
+.plant-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.plant-table th {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.plant-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.plant-table tr:hover {
+    background-color: #e8f5e9;
+    transition: 0.3s;
+}
+
+.hero{
+    text-align: center;
+    padding: 100px 50px;
+    background-color: #ecf0f1;
+}
+
+.hero h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.hero p{
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero-video {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #e0f7fa;
+    /* light background to make video pop */
+}
+
+.hero-video video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(11, 4, 4, 0.3);
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    
+
+}
+
