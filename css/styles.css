@@ -27,6 +27,7 @@ section.top-page{
         color: white;
         font-size: 80px;
         padding: 20px 50px;
+        display: flex;
     }
 
     /* Menu de navigation */
@@ -239,5 +240,6 @@ body {
     
 
 }
+
 
 
