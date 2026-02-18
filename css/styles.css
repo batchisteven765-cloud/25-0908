@@ -150,6 +150,25 @@ margin: 100px;
     font-weight: 800;
 }
 
+.nature-section {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  margin: 20px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.highlight {
+  background-color: yellow;
+  padding: 3px 6px;
+}
+
+.strike {
+  text-decoration: line-through;
+  color: gray;
+}
 
 body {
     margin: 0;
@@ -247,6 +266,7 @@ body {
     
 
 }
+
 
 
 
