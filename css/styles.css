@@ -15,11 +15,14 @@ header.header img{
 }
 
 section.top-page{
-    background: url(../image/bg.jpg);
+    background: url(../image/bg.jpg) center/cover no-repeat;
     background-size: cover;
-    height: 80vh;
-    padding: 25px;
+    height: 100vh;
+    padding:  0 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     }
 
 .big-title {
@@ -265,6 +268,7 @@ body {
     
 
 }
+
 
 
 
