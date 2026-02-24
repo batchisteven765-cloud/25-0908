@@ -266,35 +266,34 @@ body {
 
 }
 
-/* Configuration globale de la page */
 body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center;     /* Centre verticalement */
-    min-height: 100vh;       /* Utilise 100% de la hauteur de l'écran */
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    min-height: 100vh;       /* Uses 100% of the screen height */
     
-    /* Dégradé aux couleurs de la nature (vert forêt vers vert herbe) */
+    /* Nature-themed gradient (Forest green to Grass green) */
     background: linear-gradient(135deg, #1b5e20 0%, #4caf50 100%);
     
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #2c3e50;
 }
 
-/* Le conteneur principal qui regroupe tes exercices */
-.conteneur-central {
+/* Main container grouping your exercises */
+.central-container {
     width: 90%;
     max-width: 650px;
-    background-color: rgba(255, 255, 255, 0.95); /* Blanc cassé pour la lisibilité */
+    background-color: rgba(255, 255, 255, 0.95); /* Off-white for readability */
     padding: 40px;
-    border-radius: 25px; /* Coins très arrondis pour un aspect organique */
+    border-radius: 25px; /* Very rounded corners for an organic look */
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
     text-align: center;
-    border-top: 8px solid #81c784; /* Une petite bande verte en haut */
+    border-top: 8px solid #81c784; /* Small green strip at the top */
 }
 
-/* Titres */
+/* Headings */
 h1 {
     color: #1b5e20;
     margin-bottom: 30px;
@@ -307,7 +306,7 @@ h3 {
     margin-top: 25px;
 }
 
-/* Style pour les citations longues (Blockquote) */
+/* Style for long quotes (Blockquote) */
 blockquote {
     background: #f1f8e9;
     border-left: 6px solid #4caf50;
@@ -318,13 +317,13 @@ blockquote {
     border-radius: 0 15px 15px 0;
 }
 
-/* Style pour les citations courtes (Q) */
+/* Style for short quotes (Q) */
 q {
     font-weight: 500;
     color: #2e7d32;
 }
 
-/* Les lignes de séparation (HR) */
+/* Horizontal dividers (HR) */
 hr {
     border: 0;
     height: 1px;
@@ -332,29 +331,22 @@ hr {
     margin: 30px 0;
 }
 
-/* Texte préformaté (PRE) - Style "écorce / terre" */
+/* Preformatted text (PRE) - "Bark / Earth" style */
 pre {
-    background-color: #3e2723; /* Brun foncé */
-    color: #dcedc8;           /* Texte vert très clair */
+    background-color: #3e2723; /* Dark brown */
+    color: #dcedc8;           /* Very light green text */
     padding: 15px;
     border-radius: 10px;
-    text-align: left;         /* On garde l'alignement à gauche pour la structure */
+    text-align: left;         /* Keep left alignment for structure */
     font-size: 0.9em;
     overflow-x: auto;
 }
 
-/* Mise en valeur des indices (Subscript) */
+/* Highlighting subscripts */
 sub {
-    color: #e65100; /* Une couleur terre cuite pour les éléments chimiques */
+    color: #e65100; /* Terracotta color for chemical elements */
     font-weight: bold;
 }
-
-
-
-
-
-
-
 
 
 
