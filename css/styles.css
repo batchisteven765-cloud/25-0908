@@ -1,204 +1,193 @@
-css
-
-
-body{
-    margin: 0 auto;
-}
-
-header.header{
-    display: flex;
-    align-items: center;
-    background-color:NONE ;
-
-
-}
-
-header.header img{
-    width: 150px;
-}
-
-section.top-page{
-    background: url(../image/bg.jpg);
-    background-size: cover;
-    height: 80vh;
-    padding: 25px;
-    display: flex;
-    }
-
-.big-title {
-        color: white;
-        font-size: 80px;
-        padding: 20px 50px;
-        display: flex;
-    }
-
-    /* Menu de navigation */
-    nav.nav{
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        color: white;
-        width: 400px;
-        margin-left: 200px;
-    }
-    nav.nav li{
-        display: flex;
-        color: white;
-    }
-    .paragraphe{
-        display: flex;
-        color: aliceblue;
-        padding: 20px 50px;
-        font-weight: bold;
-    }
-
-.services{
-display: flex;
-justify-content: space-evenly;
-margin: 100px;
-}
-
-.service-item{
-    display: flex;
-    align-items:center ;
-    flex-direction: column;
-}
-
-.delivery-icon{
-    font-size: 50px;
-    color: #ADD981;
-}
-
-.service-details{
-    font-weight: 600;
-    width: 200px;
-    text-align: center;
-}
-
-.section-title{
-    font-size: 50px;
-    font-family: cursive;
-    font-weight: 100;
-    position: relative;
-}
-.section-title::before{
-    content:"";
-    position: absolute;
-    background-color: #ADD981;
-    width: 50px;
-    height: 7px;
-    bottom: 0;
-}
-
-.bests-items{
-    margin: 40px;
-
-}
-
-.best-plants{
-    background-color: red;
-    min-height: 500px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.plant-box{
-    position: relative;
-    background-size: cover;
-    background-position: center;
-}
-
-.no-grid{
-     min-width: 350px;
-    height: 500px;
-    flex: 1;
-}
-
-.plant1{
-    background-image: url(../image/nos_meilleures_ventes/1.jpg); 
-}
-
-.plant2{
-    background-image: url(../image/nos_meilleures_ventes/2.jpg); 
-}
-
-.plant3{
-    background-image: url(../image/nos_meilleures_ventes/3.jpg); 
-}
-
-.plant4{
-    background-image: url(../image/nos_meilleures_ventes/4.jpg); 
-}
-
-.plant-details{
-    position: absolute;
-    width:  100%;
-    bottom: 0%;
-    background-color: #FFFFFFDF;
-    padding: 5px 20px;
-
-}
-
-.plant-name{
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 3px;
-}
-
-.plant-price{
-    color: #ADD981;
-    line-height: 3px;
-    font-size: 14px;
-    font-weight: 800;
-}
-
-.nature-section {
-  font-family: Arial, sans-serif;
-  font-size: 18px;
-  margin: 20px;
-}
-
-.underline {
-  text-decoration: underline;
-}
-
-.highlight {
-  background-color: yellow;
-  padding: 3px 6px;
-}
-
-.strike {
-  text-decoration: line-through;
-  color: gray;
-}
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f9f4;
 }
 
-/* SECTION */
+/* CENTRAGE GLOBAL DES TITRES ET IMAGES */
+h1, h2, h3 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+header.header img {
+    width: 150px;
+}
+
+nav.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav.nav li {
+    color: white;
+    cursor: pointer;
+}
+
+/* TOP PAGE */
+section.top-page {
+    background: url(image/bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.big-title {
+    color: white;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.paragraphe {
+    color: aliceblue;
+    font-weight: bold;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* SERVICES */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 100px 0;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delivery-icon {
+    font-size: 50px;
+    color: #ADD981;
+}
+
+.service-details {
+    font-weight: 600;
+    text-align: center;
+}
+
+/* BEST SELLERS */
+.bests-items {
+    margin: 40px 0;
+}
+
+.section-title {
+    font-size: 50px;
+    font-family: cursive;
+    font-weight: 100;
+    margin-bottom: 40px;
+    color: #2e7d32;
+    position: relative;
+}
+
+.best-plants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    min-height: 500px;
+}
+
+.plant-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 350px;
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.plant1 {
+    background-image: url(image/nos_meilleures_ventes/1.jpg);
+}
+
+.plant2 {
+    background-image: url(image/nos_meilleures_ventes/2.jpg);
+}
+
+.plant3 {
+    background-image: url(image/nos_meilleures_ventes/3.jpg);
+}
+
+.plant-details {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.85);
+    padding: 10px;
+    text-align: center;
+}
+
+.plant-name {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.plant-price {
+    color: #ADD981;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/* NATURE SECTION */
+.nature-section {
+    font-size: 18px;
+    margin: 40px;
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.highlight {
+    background-color: yellow;
+    padding: 3px 6px;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* TABLE SECTION */
 .plants-section {
     padding: 60px 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centre horizontalement */
+    align-items: center;
 }
 
-/* TITRE */
-.section-title {
-    color: #2e7d32;
-    margin-bottom: 30px;
-}
-
-/* TABLEAU */
 .plant-table {
     border-collapse: collapse;
     width: 80%;
     max-width: 900px;
     background-color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .plant-table th,
@@ -222,56 +211,31 @@ body {
     transition: 0.3s;
 }
 
-.hero{
+/* HERO SECTION */
+.hero {
     text-align: center;
-    padding: 100px 50px;
+    padding: 100px 20px;
     background-color: #ecf0f1;
 }
 
-.hero h1{
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-.hero p{
+.hero p {
     max-width: 600px;
-    margin: auto;
+    margin: 20px auto 0 auto;
 }
 
+/* HERO VIDEO */
 .hero-video {
-    position: relative;
-    height: 80vh; /* La section prend 80% de la hauteur de l'écran */
-    width: 100%;
-    overflow: hidden;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.hero-video video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1; /* Place la vidéo derrière le contenu */
-    transform: translate(-50%, -50%);
-    object-fit: cover; /* Important pour ne pas étirer la vidéo */
-}
-
-.footer {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 20px 100px;
-    
-
+    padding: 50px 0;
 }
 
-
-
-
-
-
-
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2e7d32;
+    color: white;
+    font-weight: bold;
+}
