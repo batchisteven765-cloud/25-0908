@@ -15,7 +15,7 @@ header.header img{
 }
 
 section.top-page{
-    background: url(../image/bg.jpg) center/cover no-repeat;
+    background: url(../image/bg.jpg);
     background-size: cover;
     height: 80vh;
     padding: 25px;
@@ -25,7 +25,6 @@ section.top-page{
         color: white;
         font-size: 80px;
         padding: 20px 50px;
-        display: flex;
     }
 
     /* Menu de navigation */
@@ -264,6 +263,7 @@ body {
     
 
 }
+
 
 
 
