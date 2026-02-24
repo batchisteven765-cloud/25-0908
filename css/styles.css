@@ -1,11 +1,11 @@
-/* GLOBAL */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f9f4;
 }
 
-h1, h2 {
+/* CENTRAGE GLOBAL DES TITRES ET IMAGES */
+h1, h2, h3 {
     text-align: center;
 }
 
@@ -19,7 +19,7 @@ header.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
+    padding: 20px 40px;
 }
 
 header.header img {
@@ -30,38 +30,39 @@ nav.nav ul {
     display: flex;
     list-style: none;
     gap: 30px;
-    padding: 0;
     margin: 0;
-    color: white;
+    padding: 0;
 }
 
 nav.nav li {
+    color: white;
     cursor: pointer;
 }
 
 /* TOP PAGE */
 section.top-page {
-    background: url(../image/bg.jpg);
+    background: url(image/bg.jpg) no-repeat center center;
     background-size: cover;
-    background-position: center;
     height: 80vh;
-    padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 0 20px;
 }
 
 .big-title {
     color: white;
-    font-size: 80px;
+    font-size: 70px;
+    margin-bottom: 20px;
 }
 
 .paragraphe {
     color: aliceblue;
     font-weight: bold;
     max-width: 800px;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 /* SERVICES */
@@ -88,9 +89,9 @@ section.top-page {
     text-align: center;
 }
 
-/* BEST ITEMS */
+/* BEST SELLERS */
 .bests-items {
-    margin: 40px;
+    margin: 40px 0;
 }
 
 .section-title {
@@ -98,51 +99,45 @@ section.top-page {
     font-family: cursive;
     font-weight: 100;
     margin-bottom: 40px;
-    position: relative;
     color: #2e7d32;
+    position: relative;
 }
 
 .best-plants {
-    min-height: 500px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    min-height: 500px;
 }
 
 .plant-box {
     position: relative;
     background-size: cover;
     background-position: center;
-}
-
-.no-grid {
-    min-width: 350px;
+    width: 350px;
     height: 500px;
-    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .plant1 {
-    background-image: url(../image/nos_meilleures_ventes/1.jpg);
+    background-image: url(image/nos_meilleures_ventes/1.jpg);
 }
 
 .plant2 {
-    background-image: url(../image/nos_meilleures_ventes/2.jpg);
+    background-image: url(image/nos_meilleures_ventes/2.jpg);
 }
 
 .plant3 {
-    background-image: url(../image/nos_meilleures_ventes/3.jpg);
-}
-
-.plant4 {
-    background-image: url(../image/nos_meilleures_ventes/4.jpg);
+    background-image: url(image/nos_meilleures_ventes/3.jpg);
 }
 
 .plant-details {
     position: absolute;
     width: 100%;
     bottom: 0;
-    background-color: #FFFFFFDF;
+    background-color: rgba(255,255,255,0.85);
     padding: 10px;
     text-align: center;
 }
@@ -192,7 +187,7 @@ section.top-page {
     width: 80%;
     max-width: 900px;
     background-color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .plant-table th,
@@ -207,19 +202,28 @@ section.top-page {
     color: white;
 }
 
-/* HERO */
+.plant-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.plant-table tr:hover {
+    background-color: #e8f5e9;
+    transition: 0.3s;
+}
+
+/* HERO SECTION */
 .hero {
     text-align: center;
-    padding: 100px 50px;
+    padding: 100px 20px;
     background-color: #ecf0f1;
 }
 
 .hero p {
     max-width: 600px;
-    margin: auto;
+    margin: 20px auto 0 auto;
 }
 
-/* VIDEO */
+/* HERO VIDEO */
 .hero-video {
     display: flex;
     justify-content: center;
@@ -233,4 +237,5 @@ footer {
     padding: 20px;
     background-color: #2e7d32;
     color: white;
+    font-weight: bold;
 }
