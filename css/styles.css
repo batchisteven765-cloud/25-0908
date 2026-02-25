@@ -1,3 +1,4 @@
+
 body{
     margin: 0 auto;
 }
@@ -15,11 +16,10 @@ header.header img{
 }
 
 section.top-page{
-    background: url(../image/bg.jpg) center/cover no-repeat;
+    background: url(../image/bg.jpg);
     background-size: cover;
-    height: 100vh;
-    padding: 0 20px;
-    display: flex;
+    height: 80vh;
+    padding: 25px;
     }
 
 .big-title {
@@ -34,7 +34,7 @@ section.top-page{
         justify-content: space-between;
         list-style: none;
         color: white;
-        width: 300px;
+        width: 400px;
         margin-left: 200px;
     }
     nav.nav li{
@@ -148,80 +148,6 @@ margin: 100px;
     font-weight: 800;
 }
 
-.nature-section {
-  font-family: Arial, sans-serif;
-  font-size: 18px;
-  margin: 20px;
-}
-
-.underline {
-  text-decoration: underline;
-}
-
-.highlight {
-  background-color: yellow;
-  padding: 3px 6px;
-}
-
-.strike {
-  text-decoration: line-through;
-  color: gray;
-}
-
-
-/* Container centré dans ta page actuelle */
-#exercises-nature {
-    max-width: 650px;
-    margin: 40px auto; /* Centre le bloc horizontalement */
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    text-align: center;
-    font-family: sans-serif;
-    color: #2e7d32;
-    border: 1px solid #c8e6c9;
-}
-
-.title-nature { color: #1b5e20; text-transform: uppercase; }
-
-.item-nature { margin-bottom: 25px; }
-
-.item-nature h3 { 
-    font-size: 1rem; 
-    color: #388e3c; 
-    border-bottom: 1px solid #e8f5e9; 
-    display: inline-block;
-}
-
-/* Styles spécifiques isolés */
-.quote-nature {
-    background: #f1f8e9;
-    border-left: 5px solid #4caf50;
-    padding: 15px;
-    font-style: italic;
-    text-align: left;
-    margin: 10px auto;
-    width: 90%;
-}
-
-.hr-nature {
-    border: 0;
-    height: 1px;
-    background: linear-gradient(to right, transparent, #4caf50, transparent);
-    margin: 15px 0;
-}
-
-.pre-nature {
-    background: #3e2723;
-    color: #dcedc8;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: left;
-    display: inline-block;
-    font-size: 0.85em;
-}
-
 
 body {
     margin: 0;
@@ -289,27 +215,20 @@ body {
 }
 
 .hero-video {
-    position: relative;
-    height: 80vh; /* La section prend 80% de la hauteur de l'écran */
-    width: 100%;
-    overflow: hidden;
     display: flex;
-    align-items: center;
     justify-content: center;
+    padding: 40px 20px;
+    background-color: #e0f7fa;
+    /* light background to make video pop */
 }
 
 .hero-video video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
+    max-width: 100%;
     height: auto;
-    z-index: -1; /* Place la vidéo derrière le contenu */
-    transform: translate(-50%, -50%);
-    object-fit: cover; /* Important pour ne pas étirer la vidéo */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(11, 4, 4, 0.3);
 }
+
 
 .footer {
     display: flex;
@@ -320,7 +239,122 @@ body {
 
 }
 
+/* Container centré dans ta page actuelle */
+#exercises-nature {
+    max-width: 650px;
+    margin: 40px auto; /* Centre le bloc horizontalement */
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: sans-serif;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+.title-nature { color: #1b5e20; text-transform: uppercase; }
+
+.item-nature { margin-bottom: 25px; }
+
+.item-nature h3 { 
+    font-size: 1rem; 
+    color: #388e3c; 
+    border-bottom: 1px solid #e8f5e9; 
+    display: inline-block;
+}
+
+/* Styles spécifiques isolés */
+.quote-nature {
+    background: #f1f8e9;
+    border-left: 5px solid #4caf50;
+    padding: 15px;
+    font-style: italic;
+    text-align: left;
+    margin: 10px auto;
+    width: 90%;
+}
+
+.hr-nature {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #4caf50, transparent);
+    margin: 15px 0;
+}
+
+.pre-nature {
+    background: #3e2723;
+    color: #dcedc8;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    display: inline-block;
+    font-size: 0.85em;
+}
 
 
 
 
+* Style de la section principale */
+.hero-section {
+  width: 100%;
+  min-height: 100vh; /* Toute la hauteur de l'écran */
+  background-color: #f4f7f6; /* Fond neutre pour faire ressortir le vert */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* La section parente qui occupe tout l'écran */
+.main-wrapper {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center;     /* Centre verticalement */
+  min-height: 100vh;       /* Prend 100% de la hauteur de la fenêtre */
+  background-color: #f0f0f0; /* Couleur de fond de la page */
+  margin: 0;
+}
+
+
+/* Section principale */
+.nature-wrapper {
+    display: flex;
+    justify-content: center;   /* Centre horizontalement */
+    align-items: center;       /* Centre verticalement */
+    min-height: 100vh;         /* Prend toute la hauteur de l’écran */
+    background-color: #f4f9f4;
+}
+
+/* Conteneur */
+.nature-container {
+    width: 70%;                /* Laisse de l’espace à gauche et à droite */
+    max-width: 800px;
+}
+
+/* Tableau */
+.nature-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f4f9f4;
+    padding: 20px;
+}
+
+.nature-table td {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styles des textes */
+.underline {
+    text-decoration: underline;
+}
+
+.highlight {
+    background-color: yellow;
+    padding: 5px;
+}
+
+.strike {
+    text-decoration: line-through;
+}
