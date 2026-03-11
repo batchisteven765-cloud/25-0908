@@ -359,6 +359,85 @@ body {
 }
 
 .strike {
+
+    /* ---------- Navigation menu fix ---------- */
+
+.nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+    margin:0;
+    padding:0;
+}
+
+.nav li{
+    cursor:pointer;
+    font-weight:600;
+}
+
+.nav li:hover{
+    color:#2ecc71;
+}
+
+
+/* ---------- Two column layout ---------- */
+
+.two-columns{
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    padding:40px;
+    background:#f5f9f6;
+}
+
+.column{
+    flex:1;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+
+/* ---------- Nested list styling ---------- */
+
+.column ul{
+    margin-top:15px;
+    padding-left:20px;
+}
+
+.column ul li{
+    margin-bottom:8px;
+}
+
+
+/* ---------- Video container ---------- */
+
+.column iframe{
+    display:block;
+    margin-bottom:20px;
+    border-radius:8px;
+    width:100%;
+}
+
+
+/* ---------- Improve section spacing ---------- */
+
+section{
+    margin-bottom:50px;
+}
+
+
+/* ---------- Better footer style ---------- */
+
+footer{
+    background:#1c1c1c;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:14px;
+}
     text-decoration: line-through;
 }
+
 
